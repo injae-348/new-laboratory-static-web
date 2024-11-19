@@ -517,3 +517,84 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+/* card에 대한 css 추가 */
+/* 카드 컨테이너 스타일 */
+.card-container {
+    perspective: 1000px;
+    margin-bottom: 50px;
+    height: 300px; /* 고정 높이 설정 */
+}
+
+/* 카드 뒤집기 효과를 위한 스타일 */
+.card-flip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+/* 카드가 클릭되었을 때의 회전 효과 */
+.card-flip.flipped {
+    transform: rotateY(180deg);
+}
+
+/* 카드의 앞면과 뒷면의 공통 스타일 */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 350px; /* 고정 높이 설정 */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari 지원 */
+}
+
+/* 카드 내부 service-item 조정 */
+.card-front .service-item,
+.card-back .service-item {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* 내용이 넘치지 않도록 */
+}
+
+/* 제목 텍스트 처리 */
+.card-front .service-item h6,
+.card-back .service-item h6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* 최대 4줄까지 표시 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 6em; /* 대략적인 4줄 높이 */
+}
+
+/* 뒷면은 처음에 뒤집어져 있음 */
+.card-back {
+    transform: rotateY(180deg);
+}
+
+/* 호버 효과 */
+.card-flip:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 반응형 조정 */
+@media (max-width: 991.98px) {
+    .card-container {
+        margin-bottom: 20px;
+    }
+}
+
+/* 부모 컨테이너 정렬 */
+.row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-4.col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
