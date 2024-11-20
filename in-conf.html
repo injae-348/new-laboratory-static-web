@@ -52,7 +52,7 @@
                         <a href="in-jour.html" class="dropdown-item">International Journal</a>
                         <a href="dom-jour.html" class="dropdown-item">Domestic Journal</a>
                         <a href="in-conf.html" class="dropdown-item active">International Conference</a>
-                        <a href="dom-jour.html" class="dropdown-item">Domestic Conference</a>
+                        <a href="dom-conf.html" class="dropdown-item">Domestic Conference</a>
                     </div>
                 </div>
                 <a href="patent.html" class="nav-item nav-link">Patent</a>
@@ -77,6 +77,18 @@
         </div>
     </div>
     <!-- Page Header End -->
+
+    <!-- conference table start -->
+    <div class="conference-container">
+        <!-- <h1 class="conference-title">International Conference</h1> -->
+        <div class="conference-list" id="conferenceList">
+            <!-- JavaScript will populate this -->
+        </div>
+        <div class="load-more">
+            <button class="load-more-btn" id="loadMoreBtn">View More</button>
+        </div>
+    </div>
+    <!-- conference table end -->
 
     <!-- About Start -->
     <!-- About End -->
@@ -120,6 +132,8 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="/json-creater/in-conf.js"></script>
 </body>
 
 </html>
