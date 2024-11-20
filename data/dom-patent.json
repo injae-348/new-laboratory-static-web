@@ -1,0 +1,186 @@
+[
+    {
+        "id": 38,
+        "date": "2021-05-28",
+        "title": "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
+        "author": "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 40,
+        "date": "2021-09-11",
+        "title": "금융사기 위험도 판단 서버, 방법 및 프로그램",
+        "author": "김진술, 이동수, 아시크자만에케이엠, 장진호",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 47,
+        "date": "2023-08-21",
+        "title": "블록체인 기반 전력소비예측 인공지능 모델 거래 시스템, 방법 및 프로그램",
+        "author": "김진술, 신혜주",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 96,
+        "date": "2024-03-18",
+        "title": "말단 엣지 디바이스 기반 데이터 이상 탐지 및 결손 데이터 보완을 통한 전력소비 예측 장치 및 방법",
+        "author": "김진술 오승민",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 97,
+        "date": "2024-02-13",
+        "title": "에너지 데이터를 활용하기 위한 유전 알고리즘 기반 엣지 컴퓨팅 내 개인화된 딥러닝 모델 운용 방법과 시스템",
+        "author": "김진술 오승민",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 98,
+        "date": "2023-12-13",
+        "title": "시계열 기반 전력 데이터의 이상 탐지 방법 및 이를 위한 장치",
+        "author": "김진술 오상원",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 99,
+        "date": "2021-09-02",
+        "title": "블록체인 기반 사용자 맞춤형 감염병 알림 시스템, 장치 및 방법",
+        "author": "김진술, 김영광, 오승민, 오상원, 이동수",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 100,
+        "date": "2021-08-10",
+        "title": "딥러닝 모델 기반의 도로 상태 판단을 통한 교통 사고 예방 장치 및 방법",
+        "author": "김진술, 이동수, 아시크자만에케이엠, 오승민, 김영광",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 101,
+        "date": "2021-08-03",
+        "title": "심층학습 모델을 이용한 상습 결빙 및 미끄러움 위험 지역 모니터링을 위한 장치 및 이를 위한 방법",
+        "author": "지택수, 김진술, 김치훈, 장재혁",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 102,
+        "date": "2021-07-20",
+        "title": "도로 결빙 현상 알림을 제공하는 차량 제어 시스템 및 그것의 제어방법",
+        "author": "김진술, 아시크자만에이케이엠, 이동수",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 103,
+        "date": "2021-06-29",
+        "title": "무인 비행체를 이용한 화재위험도 예측 시스템 및 그 방법",
+        "author": "김진술, 오승민, 이동수, 아시쿠자만에이케이엠",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 104,
+        "date": "2021-06-10",
+        "title": " CCTV 영상 분석을 통한 전염병에 대한 잠재적 확진자를 예측하는 방법",
+        "author": "김진술, 이동수, 아시크자만에이케이엠, 김영광, 신혜주",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 105,
+        "date": "2021-05-28",
+        "title": "딥러닝 기반 이미지 내 객체 분류 시스템 및 방법",
+        "author": "김진술, 오상원, 아시크자만에이케이엠, 장진호, 이동수",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 106,
+        "date": "2021-04-19",
+        "title": "기계학습한 엣지 서버환경에서 블랙아이스 포트홀, 안개 등을 포함하는 도로 상태를 파악하여 사고발생을 예측함으로써 교통사고를 예방하는 사고발생 예측 장치 및 그 제어방법",
+        "author": "김진술, 이동수, 아시크자만에케이엠, 오승민, 김영광",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 107,
+        "date": "2021-01-28",
+        "title": "네트워크 서비스를 위한 이미지 품질 평가 시스템 및 그 방법",
+        "author": "김진술, 아시크자만에이케이엠, 이동수, 오승민, 김상우",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 108,
+        "date": "2020-09-11",
+        "title": "사고기록정보와 이미지에 기반한 재난 상황 판단 방법 및 시스템",
+        "author": "김진술, 이동수, 아시크자만에이케이엠, 장진호",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 109,
+        "date": "2024-07-07",
+        "title": "MQTT 기반 모빌리티 관리 시스템, 방법 및 프로그램",
+        "author": "김진술, 오상원",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 110,
+        "date": "2019-09-03",
+        "title": "적응형 스트리밍 서버를 전환하기 위한 방법",
+        "author": "김진술 마반린 김상우",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 111,
+        "date": "2019-07-22",
+        "title": "다른 위치에서 동기화된 PPG와 PCG를 사용한 감정 인식 장치 및 방법",
+        "author": "김진술 구엔반콴",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 112,
+        "date": "2019-10-01",
+        "title": "사용자 감정 분석을 이용한 이벤트 탐지 시스템 및 방법",
+        "author": "김진술, 구엔반콴",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 113,
+        "date": "2018-11-07",
+        "title": "전자 섬유를 이용한 센싱 및 사용자 식별 시스템",
+        "author": "김진술, 박상현",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 114,
+        "date": "2018-08-24",
+        "title": "정확한 위치정보 획득을 위한 퍼지로직 기반 무선신호 분석을 통한 스마트 디바이스 사용자 위치 파악 방법",
+        "author": "김진술, 마반린",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    },
+    {
+        "id": 115,
+        "date": "2018-07-06",
+        "title": "무선 기반의 장애물 감지 센서를 이용한 전동휠체어 안전주행 시스템 및 방법",
+        "author": "김진술, 박상현",
+        "read_more": "#",
+        "category": "Domestic Patents"
+    }
+]
