@@ -9,46 +9,6 @@ const journals = [
     read_more: "https://www.mdpi.com/2076-3417/13/17/9509",
     category: "International Journals",
   },
-  {
-    id: 6,
-    date: "2023-08-21",
-    title:
-      "Deep Learning Model Performance and Optimal Model Study for Hourly Fine Power Consumption Prediction",
-    author:
-      "Seungmin Oh, Sangwon Oh, Hyeju Shin, Tai-won Um*, Jinsul Kim* | Electronics",
-    read_more: "https://doi.org/10.3390/electronics12163528",
-    category: "International Journals",
-  },
-  {
-    id: 7,
-    date: "2023-06-27",
-    title:
-      "Fine-Grained Image Recognition by Means of Integrating Transformer Encoder Blocks in a Robust Single-Stage Object Detector",
-    author:
-      "Usman Ali, Seungmin Oh, Tai-Won Um, Minsoo Hahn, Jinsul Kim* | Applied Sciences",
-    read_more: "https://doi.org/10.3390/app13137589",
-    category: "International Journals",
-  },
-  {
-    id: 12,
-    date: "2022-11-03",
-    title:
-      "Genetic Algorithm for the Optimization of a Building Power Consumption Prediction Model",
-    author:
-      "Seungmin Oh, Junchul Yoon, Yoona Choi, Young-Ae Jung, Jinsul Kim* | Electronics",
-    read_more: "https://doi.org/10.3390/electronics11213591",
-    category: "International Journals",
-  },
-  {
-    id: 13,
-    date: "2022-10-14",
-    title:
-      "Methods of Pre-Clustering and Generating Time Series Images for Detecting Anomalies in Electric Power Usage Data",
-    author:
-      "Sangwon Oh, Seungmin Oh, Tai-Won Um, Jinsul Kim*, Young-Ae Jung | Electronics",
-    read_more: "https://doi.org/10.3390/electronics11203315",
-    category: "International Journals",
-  },
 ];
 
 let currentIndex = 0;
