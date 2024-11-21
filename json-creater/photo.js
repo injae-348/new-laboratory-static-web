@@ -238,6 +238,32 @@ const styles = `
     line-height: 1.5;
 }
 
+.category-container {
+    display: flex;
+    justify-content: flex-start; /* center에서 flex-start로 변경 */
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+    padding: 0 40px;
+    transition: transform 0.3s ease; /* 부드러운 전환 효과 추가 */
+}
+
+.category-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 9999px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex-shrink: 0; /* 버튼이 줄어들지 않도록 설정 */
+}
+
+.carousel-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -269,6 +295,100 @@ const styles = `
         height: 200px;
     }
 }
+
+.category-carousel {
+    position: relative;
+    background: #f3f4f6;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    overflow: hidden;
+    position: relative;
+    padding: 0 40px;
+    width: calc(100% - 80px); /* 좌우 버튼 공간 제외한 너비 */
+    max-width: 800px; /* 최대 너비 증가 */
+}
+
+.category-btn {
+    padding: 0.5rem 1.5rem; /* 좌우 패딩 증가 */
+    border: none;
+    border-radius: 9999px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    flex: 0 0 auto; /* flex-shrink 대신 flex 속성 사용 */
+    min-width: fit-content; /* 내용에 맞게 너비 조정 */
+    text-align: center;
+    font-size: 0.875rem; /* 기본 폰트 크기 조정 */
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    z-index: 2;
+}
+
+/* 반응형 스타일 개선 */
+@media (max-width: 1024px) {
+    .category-container {
+        max-width: 700px;
+    }
+    
+    .category-btn {
+        padding: 0.5rem 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .category-container {
+        max-width: 500px;
+        gap: 0.75rem;
+    }
+    
+    .category-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.8125rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-container {
+        max-width: 300px;
+        gap: 0.5rem;
+        padding: 0 35px;
+    }
+    
+    .category-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .carousel-btn {
+        width: 28px;
+        height: 28px;
+    }
+}
 `;
 
 // 데이터
@@ -284,30 +404,17 @@ const photos = [
   },
   {
     id: 2,
-    url: "./img/team-2.jpg",
-    title: "International Conference",
-    category: "국내저널",
+    url: "./img/about-1.jpg",
+    title: "DCS 2024 추계종합학술대회",
+    category: "DCS 2024",
     date: "2024-02-20",
     text: "국제 컨퍼런스에서 우리 팀의 연구 성과를 발표했습니다.",
-    relatedImages: ["./img/related-2-1.jpg", "./img/related-2-2.jpg"],
-  },
-  {
-    id: 3,
-    url: "./img/team-3.jpg",
-    title: "European Conference",
-    category: "유럽 학회",
-    date: "2024-02-20",
-    text: "유럽 학회에서 진행된 연구 교류 활동입니다.",
-    relatedImages: ["./img/related-3-1.jpg", "./img/related-3-2.jpg"],
-  },
-  {
-    id: 4,
-    url: "./img/team-4.jpg",
-    title: "International Workshop",
-    category: "conference",
-    date: "2024-02-20",
-    text: "국제 워크샵에서 새로운 연구 방향을 논의했습니다.",
-    relatedImages: [],
+    relatedImages: [
+      "./img/carousel-1.jpg",
+      "./img/about-2.jpg",
+      "./img/carousel-2.jpg",
+      "./img/carousel-2.jpg",
+    ],
   },
 ];
 
@@ -326,13 +433,13 @@ function initPhotoGallery() {
 
   function createGalleryHTML() {
     return `
-            <div class="gallery-section">
-                <div class="category-carousel">
-                    <button class="carousel-btn prev" onclick="handlePrevCategory()">←</button>
-                    <div class="category-container">
-                        ${categories
-                          .map(
-                            (category, index) => `
+        <div class="gallery-section">
+            <div class="category-carousel">
+                <button class="carousel-btn prev">←</button>
+                <div class="category-container">
+                    ${categories
+                      .map(
+                        (category, index) => `
                             <button class="category-btn ${
                               category === "all" ? "active" : ""
                             }"
@@ -343,11 +450,11 @@ function initPhotoGallery() {
                                 }
                             </button>
                         `
-                          )
-                          .join("")}
-                    </div>
-                    <button class="carousel-btn next" onclick="handleNextCategory()">→</button>
+                      )
+                      .join("")}
                 </div>
+                <button class="carousel-btn next">→</button>
+            </div>
                 
                 <div class="gallery-grid">
                     ${photos
@@ -418,9 +525,13 @@ function initPhotoGallery() {
   // 카테고리 캐러셀 제어
   function updateCategoryVisibility() {
     const containerWidth = categoryContainer.offsetWidth;
-    const buttonWidth = categoryButtons[0].offsetWidth;
-    const visibleCount = Math.floor(containerWidth / buttonWidth);
+    const gap = 16; // gap 값 (1rem)
+    const buttonWidths = Array.from(categoryButtons).map(
+      (btn) => btn.offsetWidth + gap
+    );
+    const visibleCount = 5; // 한 번에 보여질 버튼 수 고정
 
+    // 버튼들의 표시/숨김 상태 업데이트
     categoryButtons.forEach((btn, index) => {
       if (
         index >= currentCategoryIndex &&
@@ -436,6 +547,11 @@ function initPhotoGallery() {
     prevCategoryBtn.disabled = currentCategoryIndex === 0;
     nextCategoryBtn.disabled =
       currentCategoryIndex >= categories.length - visibleCount;
+
+    // 버튼 스타일 업데이트
+    prevCategoryBtn.style.opacity = currentCategoryIndex === 0 ? "0.5" : "1";
+    nextCategoryBtn.style.opacity =
+      currentCategoryIndex >= categories.length - visibleCount ? "0.5" : "1";
   }
 
   // 모달 제어
@@ -505,7 +621,8 @@ function initPhotoGallery() {
   });
 
   nextCategoryBtn.addEventListener("click", () => {
-    if (currentCategoryIndex < categories.length - 1) {
+    const visibleCount = 5;
+    if (currentCategoryIndex < categories.length - visibleCount) {
       currentCategoryIndex++;
       updateCategoryVisibility();
     }
@@ -513,7 +630,14 @@ function initPhotoGallery() {
 
   // 초기화
   updateCategoryVisibility();
-  window.addEventListener("resize", updateCategoryVisibility);
+  // 윈도우 리사이즈 이벤트에 디바운스 적용
+  let resizeTimeout;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      updateCategoryVisibility();
+    }, 100);
+  });
 }
 
 // 페이지 로드 시 초기화
