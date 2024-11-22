@@ -34,7 +34,7 @@ const conferences = [
     title:
       "Brands Logo Recognition with Semi-Supervised Learning using a Robust YOLOv8 Detection Model",
     author: "Usman Ali, 오승민, 이중훈, 김진술* | IEEE ICAIIC 2024",
-    read_more: "#",
+    read_more: "",
     category: "International Conferences",
   },
   {
@@ -44,7 +44,7 @@ const conferences = [
       "Graph Neural Network for Digital Twin Network: A Conceptual Framework",
     author:
       "Abubakar Isah, Ibrahim Aliyu, Rashid Muhammad Sulaiman, 김진술* | IEEE ICAIIC 2024",
-    read_more: "#",
+    read_more: "",
     category: "International Conferences",
   },
   {
@@ -53,7 +53,7 @@ const conferences = [
     title:
       "Designing Data Pipeline for Network Data Management in Digital Twin Network Environment",
     author: "신혜주, 오승민, 이지훈, 정광무, 김진술* | IEEE ICAIIC 2024",
-    read_more: "#",
+    read_more: "",
     category: "International Conferences",
   },
   {
@@ -62,7 +62,7 @@ const conferences = [
     title:
       "A Deep Learning Model for the Fine-grained Prediction Multivariate Nonresidential Power Consumption",
     author: "오승민, 이지훈, 김진술* | 2024 12th ICAEIC",
-    read_more: "#",
+    read_more: "",
     category: "International Conferences",
   },
 ];
@@ -76,26 +76,41 @@ function createConferenceItem(conference, index) {
     .map((item) => item.trim());
   const displayNumber = conferences.length - index;
 
+  // read_more가 존재하고 공백이 아닐 때만 활성화
+  const hasValidLink =
+    conference.read_more && conference.read_more.trim() !== "";
+
   return `
         <div class="conference-item">
             <div class="conference-item-header">
                 <div class="conference-meta-left">
-                    <div class="conference-number">${displayNumber}</div>
-                    <div class="conference-date">${conference.date}</div>
+                    <div class="conference-number" style="font-size:1.4rem">${displayNumber}</div>
+                    <div class="conference-date" style="font-size:1.5rem">${
+                      conference.date
+                    }</div>
                 </div>
                 <div class="conference-category">${conference.category}</div>
             </div>
             <h3 class="conference-item-title">
-                <a href="${conference.read_more}" target="_blank" class="conference-title-link">${conference.title}</a>
+                <span class="conference-title-text">${conference.title}</span>
             </h3>
             <div class="conference-item-content">
-                <div class="conference-item-authors">${authors}</div>
-                <div class="conference-item-publisher">${publisher}</div>
+                <div class="content-left">
+                    <div class="conference-item-authors">${authors}</div>
+                    <div class="conference-item-publisher">${publisher}</div>
+                </div>
+                <a href="${hasValidLink ? conference.read_more : "#"}" 
+                   class="conference-view-more ${
+                     !hasValidLink ? "disabled" : ""
+                   }"
+                   ${!hasValidLink ? 'onclick="return false;"' : ""} 
+                   target="_blank">
+                   View More
+                </a>
             </div>
         </div>
-          `;
+    `;
 }
-
 function loadConferences() {
   const conferenceList = document.getElementById("conferenceList");
   const endIndex = Math.min(currentIndex + itemsPerPage, conferences.length);

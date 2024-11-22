@@ -134,7 +134,7 @@ const journals = [
     date: "2021-08-01",
     title: "스마트농업 ICT 융합기술 연구 동향 분석",
     author: "이지훈, 김진술* | 한국통신학회지(정보와통신)",
-    read_more: "#",
+    read_more: "",
     category: "Domestic Journals",
   },
   {
@@ -142,7 +142,7 @@ const journals = [
     date: "2021-08-01",
     title: "스마트 팜 환경 내 사물인터넷 통신기술 연구 동향",
     author: "김영광, 정광무, 김진술* | 한국통신학회지(정보와통신)",
-    read_more: "#",
+    read_more: "",
     category: "Domestic Journals",
   },
 ];
@@ -156,24 +156,37 @@ function createJournalItem(journal, index) {
     .map((item) => item.trim());
   const displayNumber = journals.length - index;
 
+  // read_more가 존재하고 공백이 아닐 때만 활성화
+  const hasValidLink = journal.read_more && journal.read_more.trim() !== "";
+
   return `
-          <div class="journal-item">
-              <div class="journal-item-header">
-                  <div class="journal-meta-left">
-                      <div class="journal-number">${displayNumber}</div>
-                      <div class="journal-date">${journal.date}</div>
-                  </div>
-                  <div class="journal-category">${journal.category}</div>
-              </div>
-              <h3 class="journal-item-title">
-                  <a href="${journal.read_more}" target="_blank" class="journal-title-link">${journal.title}</a>
-              </h3>
-              <div class="journal-item-content">
-                  <div class="journal-item-authors">${authors}</div>
-                  <div class="journal-item-publisher">${publisher}</div>
-              </div>
-          </div>
-      `;
+        <div class="journal-item">
+            <div class="journal-item-header">
+                <div class="journal-meta-left">
+                    <div class="journal-number" style="font-size:1.4rem">${displayNumber}</div>
+                    <div class="journal-date" style="font-size:1.5rem">${
+                      journal.date
+                    }</div>
+                </div>
+                <div class="journal-category">${journal.category}</div>
+            </div>
+            <h3 class="journal-item-title">
+                <span class="journal-title-text">${journal.title}</span>
+            </h3>
+            <div class="journal-item-content">
+                <div class="content-left">
+                    <div class="journal-item-authors">${authors}</div>
+                    <div class="journal-item-publisher">${publisher}</div>
+                </div>
+                <a href="${hasValidLink ? journal.read_more : "#"}" 
+                   class="journal-view-more ${!hasValidLink ? "disabled" : ""}"
+                   ${!hasValidLink ? 'onclick="return false;"' : ""} 
+                   target="_blank">
+                   View More
+                </a>
+            </div>
+        </div>
+    `;
 }
 
 function loadJournals() {
