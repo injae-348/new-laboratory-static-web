@@ -5,7 +5,7 @@ const patents2023 = [
     title:
       "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
     author: "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
-    read_more: "#",
+    read_more: "",
     category: "Domestic Patents",
   },
 ];
@@ -15,20 +15,31 @@ const itemsPerPage2023 = 10;
 
 function createPatentItem2023(patent, index) {
   const displayNumber = patents2023.length - index;
+  const hasValidLink = patent.read_more && patent.read_more.trim() !== "";
 
   return `
-            <div class="patent-item">
-                <div class="patent-header">
-                    <div class="patent-header-left">
-                        <div class="patent-number">${displayNumber}</div>
-                        <div class="patent-date">${patent.date}</div>
-                    </div>
-                    <div class="patent-year-tag">2023</div>
-                </div>
-                <a href="${patent.read_more}" class="patent-title-link">${patent.title}</a>
-                <div class="patent-authors">${patent.author}</div>
-            </div>
-        `;
+          <div class="patent-item">
+              <div class="patent-header">
+                  <div class="patent-header-left">
+                      <div class="patent-number">${displayNumber}</div>
+                      <div class="patent-date">${patent.date}</div>
+                  </div>
+                  <div class="patent-year-tag">2023</div>
+              </div>
+              <div class="patent-title">${patent.title}</div>
+              <div class="patent-content">
+                  <div class="content-left">
+                      <div class="patent-authors">${patent.author}</div>
+                  </div>
+                  <a href="${hasValidLink ? patent.read_more : ""}" 
+                     class="patent-view-more ${!hasValidLink ? "disabled" : ""}"
+                     ${!hasValidLink ? 'onclick="return false;"' : ""} 
+                     target="_blank">
+                     View More
+                  </a>
+              </div>
+          </div>
+      `;
 }
 
 function loadPatents2023() {
