@@ -1051,8 +1051,8 @@
 
 /*여기*/
 .patent-year-tag {
-    background: #EFF5FF;
-    color: var(--primary);
+    background: #F5F0F9;
+    color:  #4A148C;
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
     font-size: 0.875rem;

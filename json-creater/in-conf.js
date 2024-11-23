@@ -84,12 +84,14 @@ function createConferenceItem(conference, index) {
         <div class="conference-item">
             <div class="conference-item-header">
                 <div class="conference-meta-left">
-                    <div class="conference-number" style="font-size:1.4rem">${displayNumber}</div>
+                    <!--<div class="journal-number" style="font-size:1.4rem">${displayNumber}</div>-->
                     <div class="conference-date" style="font-size:1.5rem">${
                       conference.date
                     }</div>
                 </div>
-                <div class="conference-category">${conference.category}</div>
+                <div class="conference-category" style="background: #FFF4E2; color:#FF9800">${
+                  conference.category
+                }</div>
             </div>
             <h3 class="conference-item-title">
                 <span class="conference-title-text">${conference.title}</span>

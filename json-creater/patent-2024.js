@@ -21,8 +21,10 @@ function createPatentItem2024(patent, index) {
           <div class="patent-item">
               <div class="patent-header">
                   <div class="patent-header-left">
-                      <div class="patent-number">${displayNumber}</div>
-                      <div class="patent-date">${patent.date}</div>
+                      <!--<div class="patent-number">${displayNumber}</div>-->
+                      <div class="patent-date" style="font-size:1.5rem">${
+                        patent.date
+                      }</div>
                   </div>
                   <div class="patent-year-tag">2024</div>
               </div>

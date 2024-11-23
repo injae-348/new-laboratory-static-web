@@ -246,12 +246,14 @@ function createJournalItem(journal, index) {
         <div class="journal-item">
             <div class="journal-item-header">
                 <div class="journal-meta-left">
-                    <div class="journal-number" style="font-size:1.4rem">${displayNumber}</div>
+                    <!--<div class="journal-number" style="font-size:1.4rem">${displayNumber}</div>-->
                     <div class="journal-date" style="font-size:1.5rem">${
                       journal.date
                     }</div>
                 </div>
-                <div class="journal-category">${journal.category}</div>
+                <div class="journal-category" style="background:#F2E2FF;color:#9C27B0">${
+                  journal.category
+                }</div>
             </div>
             <h3 class="journal-item-title">
                 <span class="journal-title-text">${journal.title}</span>
