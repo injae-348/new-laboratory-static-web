@@ -1,4 +1,3 @@
-// 프로젝트 데이터 직접 정의
 const projects = [
   {
     id: 21,

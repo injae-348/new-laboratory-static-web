@@ -1,4 +1,12 @@
-// CSS 파일
+const undergraduate = [
+  {
+    name: "정인재",
+    major: "컴퓨터정보통신공학과",
+    research_area: "Backend Develop",
+    image: "./img/member/정인재.jpg",
+  },
+];
+
 const undergradStyles = `
 .undergrad-section {
     padding: 40px 0;
@@ -97,16 +105,6 @@ const undergradStyles = `
     }
 }
 `;
-
-// JavaScript 코드
-const undergraduate = [
-  {
-    name: "정인재",
-    major: "컴퓨터정보통신공학과",
-    research_area: "Backend Develop",
-    image: "./img/member/정인재.jpg",
-  },
-];
 
 function renderUndergraduate() {
   // 스타일 태그 추가

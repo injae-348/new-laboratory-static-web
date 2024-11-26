@@ -1,4 +1,36 @@
-// CSS 파일
+const ms = [
+  {
+    name: "이중훈",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/이중훈.jpg",
+  },
+  {
+    name: "김도연",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/김도연.jpg",
+  },
+  {
+    name: "노주현",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/노주현.jpg",
+  },
+  {
+    name: "송재호",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/송재호.jpg",
+  },
+  {
+    name: "Muhammad Sulaiman Rashid",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/라시드.jpg",
+  },
+];
+
 const msStyles = `
 .ms-section {
     padding: 40px 0;
@@ -97,40 +129,6 @@ const msStyles = `
     }
 }
 `;
-
-// JavaScript 코드
-const ms = [
-  {
-    name: "이중훈",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/이중훈.jpg",
-  },
-  {
-    name: "김도연",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/김도연.jpg",
-  },
-  {
-    name: "노주현",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/노주현.jpg",
-  },
-  {
-    name: "송재호",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/송재호.jpg",
-  },
-  {
-    name: "Muhammad Sulaiman Rashid",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/라시드.jpg",
-  },
-];
 
 function renderMSStudent() {
   // 스타일 태그 추가

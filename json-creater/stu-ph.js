@@ -1,4 +1,30 @@
-// CSS 파일
+const phD = [
+  {
+    name: "오승민",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/오승민.jpg",
+  },
+  {
+    name: "이지훈",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/이지훈.png",
+  },
+  {
+    name: "오상원",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/오상원1.jpg",
+  },
+  {
+    name: "Abubakar Isah",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/이사.jpg",
+  },
+];
+
 const phdStyles = `
 .phd-section {
     padding: 40px 0;
@@ -97,34 +123,6 @@ const phdStyles = `
     }
 }
 `;
-
-// JavaScript 코드
-const phD = [
-  {
-    name: "오승민",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/오승민.jpg",
-  },
-  {
-    name: "이지훈",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/이지훈.png",
-  },
-  {
-    name: "오상원",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/오상원1.jpg",
-  },
-  {
-    name: "Abubakar Isah",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/이사.jpg",
-  },
-];
 
 function renderPhDStudent() {
   // 스타일 태그 추가

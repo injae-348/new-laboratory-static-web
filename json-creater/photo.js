@@ -1,4 +1,30 @@
-// 스타일
+// 데이터
+const photos = [
+  {
+    id: 1,
+    url: "./img/photo/ICT2024-1.jpg",
+    title: "ICT 2024",
+    category: "ICT 2024",
+    date: "2024-03-15",
+    text: "이번 세미나에서는 최신 연구 트렌드와 결과를 공유했습니다.",
+    relatedImages: ["./img/photo/ICT2024-1.jpg", "./img/photo/ICT2024-2.jpg"],
+  },
+  {
+    id: 2,
+    url: "./img/about-1.jpg",
+    title: "DCS 2024 추계종합학술대회",
+    category: "DCS 2024",
+    date: "2024-02-20",
+    text: "국제 컨퍼런스에서 우리 팀의 연구 성과를 발표했습니다.",
+    relatedImages: [
+      "./img/carousel-1.jpg",
+      "./img/about-2.jpg",
+      "./img/carousel-2.jpg",
+      "./img/carousel-2.jpg",
+    ],
+  },
+];
+
 const styles = `
 .gallery-section {
     max-width: 1200px;
@@ -390,33 +416,6 @@ const styles = `
     }
 }
 `;
-
-// 데이터
-const photos = [
-  {
-    id: 1,
-    url: "./img/photo/ICT2024-1.jpg",
-    title: "ICT 2024",
-    category: "ICT 2024",
-    date: "2024-03-15",
-    text: "이번 세미나에서는 최신 연구 트렌드와 결과를 공유했습니다.",
-    relatedImages: ["./img/photo/ICT2024-1.jpg", "./img/photo/ICT2024-2.jpg"],
-  },
-  {
-    id: 2,
-    url: "./img/about-1.jpg",
-    title: "DCS 2024 추계종합학술대회",
-    category: "DCS 2024",
-    date: "2024-02-20",
-    text: "국제 컨퍼런스에서 우리 팀의 연구 성과를 발표했습니다.",
-    relatedImages: [
-      "./img/carousel-1.jpg",
-      "./img/about-2.jpg",
-      "./img/carousel-2.jpg",
-      "./img/carousel-2.jpg",
-    ],
-  },
-];
 
 // 메인 함수
 function initPhotoGallery() {

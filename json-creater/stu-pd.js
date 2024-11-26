@@ -1,4 +1,18 @@
-// CSS 파일
+const postDoctor = [
+  {
+    name: "Aamir Nadeem",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/나딤.jpg",
+  },
+  {
+    name: "Ibrahim Aliyu",
+    major: "학과 받아오기",
+    research_area: "연구 분야 받아오기",
+    image: "./img/member/알리유.jpg",
+  },
+];
+
 const styles = `
 .postdoc-section {
     padding: 40px 0;
@@ -97,22 +111,6 @@ const styles = `
     }
 }
 `;
-
-// JavaScript 코드
-const postDoctor = [
-  {
-    name: "Aamir Nadeem",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/나딤.jpg",
-  },
-  {
-    name: "Ibrahim Aliyu",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/알리유.jpg",
-  },
-];
 
 function renderPostDoctor() {
   // 스타일 태그 추가
