@@ -1,15 +1,5 @@
 const conferences = [
   {
-    id: 54,
-    date: "2024-02-12",
-    title:
-      "A Preliminary Analysis of a Nuclear Power Plant Startup for a Physics-based Model of a Digital Twin",
-    author: "Awwal Arigi, Ibrahim Aliyu, Jinsul Kim* | IHSI 2024",
-    read_more:
-      "https://hi-iot.github.io/assets/docs/2017.03.21_A%20Fuzzy-based%20Method%20for%20Reducing%20Mobile%20Video-.pdf",
-    category: "International Conferences",
-  },
-  {
     id: 87,
     date: "2024-03-28",
     title:
@@ -29,11 +19,11 @@ const conferences = [
     category: "International Conferences",
   },
   {
-    id: 142,
-    date: "2024-02-19",
+    id: 144,
+    date: "2024-02-22",
     title:
-      "Brands Logo Recognition with Semi-Supervised Learning using a Robust YOLOv8 Detection Model",
-    author: "Usman Ali, 오승민, 이중훈, 김진술* | IEEE ICAIIC 2024",
+      "Designing Data Pipeline for Network Data Management in Digital Twin Network Environment",
+    author: "신혜주, 오승민, 이지훈, 정광무, 김진술* | IEEE ICAIIC 2024",
     read_more: "",
     category: "International Conferences",
   },
@@ -48,12 +38,22 @@ const conferences = [
     category: "International Conferences",
   },
   {
-    id: 144,
-    date: "2024-02-22",
+    id: 142,
+    date: "2024-02-19",
     title:
-      "Designing Data Pipeline for Network Data Management in Digital Twin Network Environment",
-    author: "신혜주, 오승민, 이지훈, 정광무, 김진술* | IEEE ICAIIC 2024",
+      "Brands Logo Recognition with Semi-Supervised Learning using a Robust YOLOv8 Detection Model",
+    author: "Usman Ali, 오승민, 이중훈, 김진술* | IEEE ICAIIC 2024",
     read_more: "",
+    category: "International Conferences",
+  },
+  {
+    id: 54,
+    date: "2024-02-12",
+    title:
+      "A Preliminary Analysis of a Nuclear Power Plant Startup for a Physics-based Model of a Digital Twin",
+    author: "Awwal Arigi, Ibrahim Aliyu, Jinsul Kim* | IHSI 2024",
+    read_more:
+      "https://hi-iot.github.io/assets/docs/2017.03.21_A%20Fuzzy-based%20Method%20for%20Reducing%20Mobile%20Video-.pdf",
     category: "International Conferences",
   },
   {
@@ -101,7 +101,7 @@ function createConferenceItem(conference, index) {
                     <div class="conference-item-authors">${authors}</div>
                     <div class="conference-item-publisher">${publisher}</div>
                 </div>
-                <a href="${hasValidLink ? conference.read_more : "#"}" 
+                <a href="${hasValidLink ? conference.read_more : ""}" 
                    class="conference-view-more ${
                      !hasValidLink ? "disabled" : ""
                    }"

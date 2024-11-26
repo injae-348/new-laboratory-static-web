@@ -1,5 +1,23 @@
 const journals = [
   {
+    id: 116,
+    date: "2024-05-01",
+    title:
+      "언리얼 엔진 나이아가라 파티클 시뮬레이션을 이용한 대규모 메타버스 플랫폼 구현",
+    author: "정광무, 정일권, 김진술* | 디지털콘텐츠학회논문지",
+    read_more: "https://doi.org/10.9728/dcs.2024.25.5.1387",
+    category: "Domestic Journals",
+  },
+  {
+    id: 118,
+    date: "2024-04-01",
+    title:
+      "이미지 내 객체 분류를 위한 노드 가지치기 기반 압축된 심층 합성곱 신경망 모델",
+    author: "오상원, 오승민, 김영광, 신혜주, 김진술* | 디지털콘텐츠학회논문지",
+    read_more: "https://doi.org/10.9728/dcs.2022.23.4.735",
+    category: "Domestic Journals",
+  },
+  {
     id: 55,
     date: "2023-04-30",
     title: "하이브리드 클라우드 환경 기반 연합학습 시스템 아키텍처 연구",
@@ -27,6 +45,22 @@ const journals = [
     category: "Domestic Journals",
   },
   {
+    id: 130,
+    date: "2021-08-01",
+    title: "스마트농업 ICT 융합기술 연구 동향 분석",
+    author: "이지훈, 김진술* | 한국통신학회지(정보와통신)",
+    read_more: "",
+    category: "Domestic Journals",
+  },
+  {
+    id: 131,
+    date: "2021-08-01",
+    title: "스마트 팜 환경 내 사물인터넷 통신기술 연구 동향",
+    author: "김영광, 정광무, 김진술* | 한국통신학회지(정보와통신)",
+    read_more: "",
+    category: "Domestic Journals",
+  },
+  {
     id: 72,
     date: "2020-12-31",
     title:
@@ -37,21 +71,12 @@ const journals = [
     category: "Domestic Journals",
   },
   {
-    id: 116,
-    date: "2024-05-01",
+    id: 120,
+    date: "2020-11-30",
     title:
-      "언리얼 엔진 나이아가라 파티클 시뮬레이션을 이용한 대규모 메타버스 플랫폼 구현",
-    author: "정광무, 정일권, 김진술* | 디지털콘텐츠학회논문지",
-    read_more: "https://doi.org/10.9728/dcs.2024.25.5.1387",
-    category: "Domestic Journals",
-  },
-  {
-    id: 118,
-    date: "2024-04-01",
-    title:
-      "이미지 내 객체 분류를 위한 노드 가지치기 기반 압축된 심층 합성곱 신경망 모델",
-    author: "오상원, 오승민, 김영광, 신혜주, 김진술* | 디지털콘텐츠학회논문지",
-    read_more: "https://doi.org/10.9728/dcs.2022.23.4.735",
+      "무선 센서 네트워크에서 네트워크 수명 향상을 위한 체인 기반의 라우팅 모델",
+    author: "신병무, 김진술* | 아시아태평양융합연구교류논문지",
+    read_more: "https://doi.org/10.30693/smj.2020.9.3.122",
     category: "Domestic Journals",
   },
   {
@@ -61,15 +86,6 @@ const journals = [
       "K-평균 군집화 알고리즘 및 딥러닝 기반 군중 집계를 이용한 전염병 확진자 접촉 가능성 여부 판단 모니터링 시스템 제안",
     author:
       "이동수, ASUIQUZZAMAN AKM, 김영광, 신혜주, 김진술* | 스마트미디어저널",
-    read_more: "https://doi.org/10.30693/smj.2020.9.3.122",
-    category: "Domestic Journals",
-  },
-  {
-    id: 120,
-    date: "2020-11-30",
-    title:
-      "무선 센서 네트워크에서 네트워크 수명 향상을 위한 체인 기반의 라우팅 모델",
-    author: "신병무, 김진술* | 아시아태평양융합연구교류논문지",
     read_more: "https://doi.org/10.30693/smj.2020.9.3.122",
     category: "Domestic Journals",
   },
@@ -111,16 +127,6 @@ const journals = [
     category: "Domestic Journals",
   },
   {
-    id: 127,
-    date: "2017-04-01",
-    title:
-      "로컬 물리적 네트워크에서 효율적인 대역폭 공유를 위한  퍼지 기반의 동적 방법",
-    author:
-      "Linh Van Ma, 박상현, 장종현, 박재형, 김진술* | 디지털콘텐츠학회논문지",
-    read_more: "https://doi.org//10.9728/dcs.2017.18.2.411",
-    category: "Domestic Journals",
-  },
-  {
     id: 128,
     date: "2017-04-07",
     title:
@@ -130,19 +136,13 @@ const journals = [
     category: "Domestic Journals",
   },
   {
-    id: 130,
-    date: "2021-08-01",
-    title: "스마트농업 ICT 융합기술 연구 동향 분석",
-    author: "이지훈, 김진술* | 한국통신학회지(정보와통신)",
-    read_more: "",
-    category: "Domestic Journals",
-  },
-  {
-    id: 131,
-    date: "2021-08-01",
-    title: "스마트 팜 환경 내 사물인터넷 통신기술 연구 동향",
-    author: "김영광, 정광무, 김진술* | 한국통신학회지(정보와통신)",
-    read_more: "",
+    id: 127,
+    date: "2017-04-01",
+    title:
+      "로컬 물리적 네트워크에서 효율적인 대역폭 공유를 위한  퍼지 기반의 동적 방법",
+    author:
+      "Linh Van Ma, 박상현, 장종현, 박재형, 김진술* | 디지털콘텐츠학회논문지",
+    read_more: "https://doi.org//10.9728/dcs.2017.18.2.411",
     category: "Domestic Journals",
   },
 ];
@@ -180,7 +180,7 @@ function createJournalItem(journal, index) {
                     <div class="journal-item-authors">${authors}</div>
                     <div class="journal-item-publisher">${publisher}</div>
                 </div>
-                <a href="${hasValidLink ? journal.read_more : "#"}" 
+                <a href="${hasValidLink ? journal.read_more : ""}" 
                    class="journal-view-more ${!hasValidLink ? "disabled" : ""}"
                    ${!hasValidLink ? 'onclick="return false;"' : ""} 
                    target="_blank">

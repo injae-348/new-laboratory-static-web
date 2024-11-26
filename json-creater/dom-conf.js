@@ -1,51 +1,5 @@
 const conferences = [
   {
-    id: 132,
-    date: "2024-06-19",
-    title: "심층신경망을 이용한 네트워크 장애 분류를 위한 디지털 트윈 네트워크",
-    author:
-      "Abubakar Isah, 이지훈, 오상원, 김진술* | 2024년도 한국통신학회 하계종합학술발표회",
-    read_more: "",
-    category: "Domestic Conferences",
-  },
-  {
-    id: 133,
-    date: "2022-02-09",
-    title:
-      "시계열 데이터의 이상 탐지를 위한 Recurrence Plot 알고리즘 기반 시계열 이미지 생성 방안",
-    author:
-      "오상원, 윤준철, 김영관, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
-    read_more: "",
-    category: "Domestic Conferences",
-  },
-  {
-    id: 134,
-    date: "2022-02-09",
-    title: "YOLO v3를 활용한 미디어 내 운송기기 탐지 모델 구현",
-    author:
-      "신혜주, 오승민, 오상원, 김영광, 엄태원, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
-    read_more: "",
-    category: "Domestic Conferences",
-  },
-  {
-    id: 135,
-    date: "2022-02-09",
-    title: "생성적 적대 신경망 기반 이미지 생성을 통한 초해상화 방안",
-    author:
-      "오승민, 오상원, 신혜주, 엄태원, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
-    read_more: "",
-    category: "Domestic Conferences",
-  },
-  {
-    id: 136,
-    date: "2022-02-09",
-    title: "전력 수요 예측을 위한 에지 컴퓨팅 성능 측정 연구",
-    author:
-      "김영광, 이지훈, 윤준철, 김영관, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
-    read_more: "",
-    category: "Domestic Conferences",
-  },
-  {
     id: 137,
     date: "2024-06-27",
     title:
@@ -92,6 +46,52 @@ const conferences = [
     read_more: "",
     category: "Domestic Conferences",
   },
+  {
+    id: 132,
+    date: "2024-06-19",
+    title: "심층신경망을 이용한 네트워크 장애 분류를 위한 디지털 트윈 네트워크",
+    author:
+      "Abubakar Isah, 이지훈, 오상원, 김진술* | 2024년도 한국통신학회 하계종합학술발표회",
+    read_more: "",
+    category: "Domestic Conferences",
+  },
+  {
+    id: 133,
+    date: "2022-02-09",
+    title:
+      "시계열 데이터의 이상 탐지를 위한 Recurrence Plot 알고리즘 기반 시계열 이미지 생성 방안",
+    author:
+      "오상원, 윤준철, 김영관, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
+    read_more: "",
+    category: "Domestic Conferences",
+  },
+  {
+    id: 134,
+    date: "2022-02-09",
+    title: "YOLO v3를 활용한 미디어 내 운송기기 탐지 모델 구현",
+    author:
+      "신혜주, 오승민, 오상원, 김영광, 엄태원, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
+    read_more: "",
+    category: "Domestic Conferences",
+  },
+  {
+    id: 135,
+    date: "2022-02-09",
+    title: "생성적 적대 신경망 기반 이미지 생성을 통한 초해상화 방안",
+    author:
+      "오승민, 오상원, 신혜주, 엄태원, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
+    read_more: "",
+    category: "Domestic Conferences",
+  },
+  {
+    id: 136,
+    date: "2022-02-09",
+    title: "전력 수요 예측을 위한 에지 컴퓨팅 성능 측정 연구",
+    author:
+      "김영광, 이지훈, 윤준철, 김영관, 김진술* | 2022년도 한국통신학회 동계종합학술발표회",
+    read_more: "",
+    category: "Domestic Conferences",
+  },
 ];
 
 let currentIndex = 0;
@@ -128,7 +128,7 @@ function createConferenceItem(conference, index) {
                     <div class="conference-item-authors">${authors}</div>
                     <div class="conference-item-publisher">${publisher}</div>
                 </div>
-                <a href="${hasValidLink ? conference.read_more : "#"}" 
+                <a href="${hasValidLink ? conference.read_more : ""}" 
                    class="conference-view-more ${
                      !hasValidLink ? "disabled" : ""
                    }"
