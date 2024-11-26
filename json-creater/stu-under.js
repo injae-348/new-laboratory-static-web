@@ -103,7 +103,7 @@ const undergraduate = [
   {
     name: "정인재",
     major: "컴퓨터정보통신공학과",
-    research_area: "Software Backend & Infra",
+    research_area: "Backend Develop",
     image: "./img/member/정인재.jpg",
   },
 ];

@@ -1,4 +1,108 @@
-// CSS 파일
+const alumni = [
+  {
+    name: "Usman Ali",
+    degree: "Master's Degree",
+    company: " ",
+    image_path: "./img/member/alumni/우스만.jpg",
+  },
+  {
+    name: "정광무",
+    degree: "Master's Degree",
+    company: " ",
+    image_path: "./img/member/alumni/정광무.png",
+  },
+  {
+    name: "신혜주",
+    degree: "Master's Degree",
+    company: "",
+    image_path: "./img/member/alumni/신혜주.jpg",
+  },
+  {
+    name: "김영광",
+    degree: "Master's Degree",
+    company: "KETI (한국전자기술연구)",
+    image_path: "./img/member/alumni/김영광.jpg",
+  },
+  {
+    name: "나누리",
+    degree: "Undergraduate",
+    company: "KEPCO (한국전력공사)",
+    image_path: "./img/member/alumni/나누리.jpg",
+  },
+  {
+    name: "양진승",
+    degree: "Undergraduate",
+    company: "네이버",
+    image_path: "./img/member/alumni/양진승.jpg",
+  },
+  {
+    name: "문용필",
+    degree: "Undergraduate",
+    company: "SK텔레콤",
+    image_path: "./img/member/alumni/문용필.png",
+  },
+  {
+    name: "박상현",
+    degree: "Master's Degree",
+    company: "-",
+    image_path: "./img/member/alumni/박상현.png",
+  },
+  {
+    name: "Ha Tran-Thi-Thu",
+    degree: "Master's Degree",
+    company: " ",
+    image_path: "./img/member/alumni/Ha Tran-Thi-Thu.png",
+  },
+  {
+    name: "Linh Van Ma",
+    degree: "Master's Degree",
+    company: " ",
+    image_path: "./img/member/alumni/Linh Van Ma.jpg",
+  },
+  {
+    name: "최근창",
+    degree: "Undergraduate",
+    company: "SK C&C",
+    image_path: "./img/member/alumni/최근창.jpg",
+  },
+  {
+    name: "조영빈",
+    degree: "Undergraduate",
+    company: "한전KDN",
+    image_path: "./img/member/alumni/조영빈.jpg",
+  },
+  {
+    name: "김민혜",
+    degree: "Undergraduate",
+    company: " ",
+    image_path: "./img/member/alumni/김민혜.jpg",
+  },
+  {
+    name: "박용범",
+    degree: "Undergraduate",
+    company: "(주)동네티콘 CEO",
+    image_path: "./img/member/alumni/박용범.jpg",
+  },
+  {
+    name: "정소진",
+    degree: "Undergraduate",
+    company: " ",
+    image_path: "./img/member/alumni/정소진.jpg",
+  },
+  {
+    name: "이동수",
+    degree: "Master's Degree",
+    company: " ",
+    image_path: "./img/member/alumni/이동수.jpg",
+  },
+  {
+    name: "Akm Ashiquzzaman",
+    degree: "Master's Degree",
+    company: " GIST",
+    image_path: "./img/member/alumni/Akm Ashiquzzaman.jpg",
+  },
+];
+
 const alumniStyles = `
 .alumni-section {
     padding: 40px 0;
@@ -98,16 +202,6 @@ const alumniStyles = `
 }
 `;
 
-// JavaScript 코드
-const alumni = [
-  {
-    name: "test member",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
-    image: "./img/member/default picture.png",
-  },
-];
-
 function renderAlumni() {
   // 스타일 태그 추가
   const styleSheet = document.createElement("style");
@@ -133,19 +227,19 @@ function renderAlumni() {
                       index % 2 !== 0 ? "reverse" : ""
                     }">
                         <div class="alumni-image">
-                            <img src="${member.image}" alt="${member.name}">
+                            <img src="${member.image_path}" alt="${
+      member.name
+    }">
                         </div>
                         <div class="alumni-content">
                             <h2 class="alumni-name">${member.name}</h2>
                             <div class="alumni-info">
-                                <p class="alumni-label">전공</p>
-                                <p class="alumni-text">${member.major}</p>
+                                <p class="alumni-label">Degree</p>
+                                <p class="alumni-text">${member.degree}</p>
                             </div>
                             <div class="alumni-info">
-                                <p class="alumni-label">연구분야</p>
-                                <p class="alumni-text">${
-                                  member.research_area
-                                }</p>
+                                <p class="alumni-label">Company</p>
+                                <p class="alumni-text">${member.company}</p>
                             </div>
                         </div>
                     </div>
