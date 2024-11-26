@@ -1,14 +1,5 @@
 const patents2021 = [
   {
-    id: 38,
-    date: "2021-05-28",
-    title:
-      "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
-    author: "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
-    read_more: "",
-    category: "Domestic Patents",
-  },
-  {
     id: 40,
     date: "2021-09-11",
     title: "금융사기 위험도 판단 서버, 방법 및 프로그램",
@@ -67,6 +58,15 @@ const patents2021 = [
     category: "Domestic Patents",
   },
   {
+    id: 38,
+    date: "2021-05-28",
+    title:
+      "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
+    author: "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
+    read_more: "",
+    category: "Domestic Patents",
+  },
+  {
     id: 105,
     date: "2021-05-28",
     title: "딥러닝 기반 이미지 내 객체 분류 시스템 및 방법",
@@ -84,12 +84,30 @@ const patents2021 = [
     category: "Domestic Patents",
   },
   {
+    id: 53,
+    date: "2021-02-26",
+    title:
+      "심층학습 모델을 이용한 상습 결빙 및 미끄러움 위험 지역 모니터링을 위한 장치 및 이를 위한 방법",
+    author: "김진술",
+    read_more: "",
+    category: "International Patents",
+  },
+  {
     id: 107,
     date: "2021-01-28",
     title: "네트워크 서비스를 위한 이미지 품질 평가 시스템 및 그 방법",
     author: "김진술, 아시크자만에이케이엠, 이동수, 오승민, 김상우",
     read_more: "",
     category: "Domestic Patents",
+  },
+  {
+    id: 129,
+    date: "2021-01-25",
+    title:
+      "기계학습한 엣지 서버환경에서 블랙아이스, 포트홀, 안개 등을 포함하는 도로상태를 파악하여 사고발생을 예측함으로써 교통사고를 예방하는 사고발생 예측 장치 및 그 제어 방법",
+    author: "김진술, 이동수, ASIQUZZAMAN AKM, 오승민, 김영광",
+    read_more: "https://patents.google.com/patent/KR102244143B1/ko",
+    category: "International Patents",
   },
 ];
 

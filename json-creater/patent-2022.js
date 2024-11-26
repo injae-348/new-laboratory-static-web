@@ -1,14 +1,4 @@
-const patents2022 = [
-  {
-    id: 38,
-    date: "2022-05-28",
-    title:
-      "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
-    author: "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
-    read_more: "",
-    category: "Domestic Patents",
-  },
-];
+const patents2022 = [];
 
 let currentIndex2022 = 0;
 const itemsPerPage2022 = 10;

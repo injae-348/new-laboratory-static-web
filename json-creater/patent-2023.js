@@ -1,10 +1,18 @@
 const patents2023 = [
   {
-    id: 38,
-    date: "2023-05-28",
+    id: 98,
+    date: "2023-12-13",
+    title: "시계열 기반 전력 데이터의 이상 탐지 방법 및 이를 위한 장치",
+    author: "김진술 오상원",
+    read_more: "",
+    category: "Domestic Patents",
+  },
+  {
+    id: 47,
+    date: "2023-08-21",
     title:
-      "화재상황에 대한 화재기록정보를 분석하여 화재상황의 위험도를 판단하는 시스템 및 그 방법",
-    author: "김진술, 이동수, 아시크자만에케이엠, 오승민, 장진호",
+      "블록체인 기반 전력소비예측 인공지능 모델 거래 시스템, 방법 및 프로그램",
+    author: "김진술, 신혜주",
     read_more: "",
     category: "Domestic Patents",
   },
