@@ -1,26 +1,26 @@
 const phD = [
   {
     name: "오승민",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "AI, Time Series Forecasting, Time Series Anomaly Detection",
     image: "./img/member/오승민.jpg",
   },
   {
     name: "이지훈",
-    major: "학과 받아오기",
+    major: "지능전자컴퓨터공학과",
     research_area: "연구 분야 받아오기",
     image: "./img/member/이지훈.png",
   },
   {
     name: "오상원",
-    major: "학과 받아오기",
+    major: "지능전자컴퓨터공학과",
     research_area: "연구 분야 받아오기",
     image: "./img/member/오상원1.jpg",
   },
   {
     name: "Abubakar Isah",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "Graph Neural Network, Cost-Sensitive Learning, Imbalance Learning",
     image: "./img/member/이사.jpg",
   },
 ];

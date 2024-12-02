@@ -1,32 +1,32 @@
 const ms = [
   {
     name: "이중훈",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "Knowledge graph Completion, Graph Neural Network, Graph Embedding",
     image: "./img/member/이중훈.jpg",
   },
   {
     name: "김도연",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능정보융합학과",
+    research_area: "Meta-Learning, Model Pruning",
     image: "./img/member/김도연.jpg",
   },
   {
     name: "노주현",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "LSTM, Time Series Forecasting",
     image: "./img/member/노주현.jpg",
   },
   {
     name: "송재호",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "CNN, Object Detection",
     image: "./img/member/송재호.jpg",
   },
   {
     name: "Muhammad Sulaiman Rashid",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지능전자컴퓨터공학과",
+    research_area: "Network Optimization, Resource Allocation",
     image: "./img/member/라시드.jpg",
   },
 ];

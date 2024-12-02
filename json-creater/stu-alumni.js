@@ -2,37 +2,37 @@ const alumni = [
   {
     name: "Usman Ali",
     degree: "Master's Degree",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/우스만.jpg",
   },
   {
     name: "정광무",
     degree: "Master's Degree",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/정광무.png",
   },
   {
     name: "신혜주",
     degree: "Master's Degree",
-    company: "",
+    company: "한국전자통신연구원",
     image_path: "./img/member/alumni/신혜주.jpg",
   },
   {
     name: "김영광",
     degree: "Master's Degree",
-    company: "KETI (한국전자기술연구)",
+    company: "한국전자기술연구원",
     image_path: "./img/member/alumni/김영광.jpg",
   },
   {
     name: "나누리",
     degree: "Undergraduate",
-    company: "KEPCO (한국전력공사)",
+    company: "한국전력공사",
     image_path: "./img/member/alumni/나누리.jpg",
   },
   {
     name: "양진승",
     degree: "Undergraduate",
-    company: "네이버",
+    company: "(주)네이버",
     image_path: "./img/member/alumni/양진승.jpg",
   },
   {
@@ -50,13 +50,13 @@ const alumni = [
   {
     name: "Ha Tran-Thi-Thu",
     degree: "Master's Degree",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/Ha Tran-Thi-Thu.png",
   },
   {
     name: "Linh Van Ma",
     degree: "Master's Degree",
-    company: " ",
+    company: "광주과학기술원",
     image_path: "./img/member/alumni/Linh Van Ma.jpg",
   },
   {
@@ -74,31 +74,31 @@ const alumni = [
   {
     name: "김민혜",
     degree: "Undergraduate",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/김민혜.jpg",
   },
   {
     name: "박용범",
     degree: "Undergraduate",
-    company: "(주)동네티콘 CEO",
+    company: "(주)동네티콘",
     image_path: "./img/member/alumni/박용범.jpg",
   },
   {
     name: "정소진",
     degree: "Undergraduate",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/정소진.jpg",
   },
   {
     name: "이동수",
     degree: "Master's Degree",
-    company: " ",
+    company: "-",
     image_path: "./img/member/alumni/이동수.jpg",
   },
   {
     name: "Akm Ashiquzzaman",
     degree: "Master's Degree",
-    company: " GIST",
+    company: "광주과학기술원",
     image_path: "./img/member/alumni/Akm Ashiquzzaman.jpg",
   },
 ];

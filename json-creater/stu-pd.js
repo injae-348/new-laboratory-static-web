@@ -1,14 +1,14 @@
 const postDoctor = [
   {
     name: "Aamir Nadeem",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지역지능화 G5-AICT 연구센터 전임연구원",
+    research_area: "Task Prioritization, Offload Optimization, D2D-Assisted MEC",
     image: "./img/member/나딤.jpg",
   },
   {
     name: "Ibrahim Aliyu",
-    major: "학과 받아오기",
-    research_area: "연구 분야 받아오기",
+    major: "지역지능화 G5-AICT 연구센터 전임연구원",
+    research_area: "5G Network, In-network Computing, Task Offloading",
     image: "./img/member/알리유.jpg",
   },
 ];
