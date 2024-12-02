@@ -20,7 +20,7 @@ const ms = [
   {
     name: "송재호",
     major: "지능전자컴퓨터공학과",
-    research_area: "CNN, Object Detection",
+    research_area: "Object Detection",
     image: "./img/member/송재호.jpg",
   },
   {
