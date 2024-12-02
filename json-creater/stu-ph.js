@@ -8,13 +8,13 @@ const phD = [
   {
     name: "이지훈",
     major: "지능전자컴퓨터공학과",
-    research_area: "연구 분야 받아오기",
+    research_area: "AI-based Network Management, Graph Neural Network, Explainable AI",
     image: "./img/member/이지훈.png",
   },
   {
     name: "오상원",
     major: "지능전자컴퓨터공학과",
-    research_area: "연구 분야 받아오기",
+    research_area: "Generation Model, Synthetic Data Generation, Time-Series Analysis",
     image: "./img/member/오상원1.jpg",
   },
   {

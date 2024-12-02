@@ -159,7 +159,7 @@ function createProjectCard(project, index) {
                 <div class="card-back">
                     <div class="service-item bg-dark text-white rounded h-100 p-3">
                         <img src="${project.image_path}" alt="project-img" class="img-fluid rounded"
-                            style="height: 100%; width: 100%; object-fit:cover;">
+                            style="height: auto; width: 100%; object-fit:cover;">
                     </div>
                 </div>
             </div>

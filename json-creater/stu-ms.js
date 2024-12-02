@@ -2,25 +2,26 @@ const ms = [
   {
     name: "이중훈",
     major: "지능전자컴퓨터공학과",
-    research_area: "Knowledge graph Completion, Graph Neural Network, Graph Embedding",
+    research_area:
+      "Knowledge graph Completion, Graph Neural Network, Graph Embedding",
     image: "./img/member/이중훈.jpg",
   },
   {
     name: "김도연",
     major: "지능정보융합학과",
-    research_area: "Meta-Learning, Model Pruning",
+    research_area: "AI, Computer Vision, Model Compression",
     image: "./img/member/김도연.jpg",
   },
   {
     name: "노주현",
     major: "지능전자컴퓨터공학과",
-    research_area: "LSTM, Time Series Forecasting",
+    research_area: "AI, Time Series Forecasting, Time Series Anomaly Detection",
     image: "./img/member/노주현.jpg",
   },
   {
     name: "송재호",
     major: "지능전자컴퓨터공학과",
-    research_area: "Object Detection",
+    research_area: "AI, Computer Vision, Object Detection",
     image: "./img/member/송재호.jpg",
   },
   {

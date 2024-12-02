@@ -142,7 +142,7 @@ function renderPostDoctor() {
                         <div class="postdoc-content">
                             <h2 class="postdoc-name">${member.name}</h2>
                             <div class="postdoc-info">
-                                <p class="postdoc-label">전공</p>
+                                <p class="postdoc-label">소속</p>
                                 <p class="postdoc-text">${member.major}</p>
                             </div>
                             <div class="postdoc-info">
