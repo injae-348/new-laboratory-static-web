@@ -65,9 +65,16 @@ ttl = 1 hour
 ## HTML 파일, img 디렉터리, json-creator 디렉터리
 ![image](https://github.com/user-attachments/assets/7cfb1843-5b2b-4967-9b33-689c3b8631bd)
 
-Hi-IoP 사이트에는 ABOUT, MEMBER, PROJECT, PUBLICATION(International Journal, Domestic Journal, International Conference, Domestic Conference), PATENT, PHOTO 페이지가 있습니다.
+Hi-IoP 사이트는 다음과 같은 페이지들로 이루어져 있습니다.(이미지 참고해주세요.)
+- ABOUT
+- MEMBER
+- PROJECT
+- PUBLICATION(International Journal, Domestic Journal, International Conference, Domestic Conference
+- PATENT
+- PHOTO
 
 PUBLICATION에서 JOURNAL과 CONFERENCE 의 경우 IJ, DJ, IC, DC 약자로 표시하겠습니다.
+
 
 ### 각 페이지별 사용되는 .html 파일 및 json-creator/*.js 파일
 각 html 파일에 들어갈 데이터들은(EX. Member 정보, Patent 정보 등등) json-creator에 .js 파일들을 통해 데이터를 넣어줬습니다.
