@@ -62,7 +62,7 @@ ttl = 1 hour
 
 ---
 
-## HTML 파일, img 디렉터리, json-creator 디렉터리
+## HTML 파일, img 디렉터리, json-creator 디렉터리 연관 관계
 ![image](https://github.com/user-attachments/assets/7cfb1843-5b2b-4967-9b33-689c3b8631bd)
 
 Hi-IoP 사이트는 다음과 같은 페이지들로 이루어져 있습니다.(이미지 참고해주세요.)
@@ -77,7 +77,6 @@ PUBLICATION에서 JOURNAL과 CONFERENCE 의 경우 IJ, DJ, IC, DC 약자로 표�
 
 
 ### 각 페이지별 사용되는 .html 파일 및 json-creator/*.js 파일
-각 html 파일에 들어갈 데이터들은(EX. Member 정보, Patent 정보 등등) json-creator에 .js 파일들을 통해 데이터를 넣어줬습니다.
 ```
 ABOUT - index.html 
 MEMBER - member.html / stu-alumi.js, stu-ms.js, stu-pd.js, stu-ph.js, stu-under.js
@@ -89,5 +88,18 @@ DC - dom-conf.html / dom-conf.js
 PATENT - patent.html / patent-pre-2021.js, patent-202x.js
 PHOTO - photo.html / photo.js
 ```
+
+참고
+1. 각 html 파일에 들어갈 데이터들은(EX. Member 정보, Patent 정보 등등) json-creator에 .js 파일들을 통해 데이터를 넣어줬습니다.
+
+  1-1. ex) Member페이지 Undergraduate 정보 변경 필요 => stu-under.js 파일 변경
+  
+  1-2. ex) Project페이지 내용 변경 필요 => project.js 파일 변경
+
+3. 다만, html 파일에 하드 코딩된 부분은 크게 2개 있습니다.(수정이 필요할 때 .html 파일을 직접 수정해주세요.)
+   
+   2-1. .js 파일이 없는 index.html 모든 정보가 하드코딩 되어있다 생각하시면 됩니다.
+   
+   2-2. member.html의 Professor 정보
 
 
