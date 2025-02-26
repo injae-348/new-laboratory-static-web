@@ -9,7 +9,7 @@ const ms = [
   {
     name: "김도연",
     major: "지능정보융합학과",
-    research_area: "AI, Computer Vision, Model Compression",
+    research_area: "AI, Computer Vision, Meta Learning",
     image: "./img/member/김도연.jpg",
   },
   {
