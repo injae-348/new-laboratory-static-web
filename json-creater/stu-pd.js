@@ -6,7 +6,7 @@ const postDoctor = [
     image: "./img/member/나딤.jpg",
   },
   {
-    name: "Ibrahim Aliyu",
+    name: "Aliyu Ibrahim",
     major: "지역지능화 G5-AICT 연구센터 전임연구원",
     research_area: "5G Network, In-network Computing, Task Offloading",
     image: "./img/member/알리유.jpg",
